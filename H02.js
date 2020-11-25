@@ -1,11 +1,11 @@
 // Is able to count the most frequency of a word in a text
-//small problem with punctuation
+
 
 
 //Some imports commands if you want to import the string of text you want to count the words of
 
 var fs = require("fs");
-var importText = fs.readFileSync("/Users/macminizouhir/Documents/JS/codin/C00.txt").toString('utf-8');
+var importText = fs.readFileSync("USE YOUR OWN DIRECTORY/C00.txt").toString('utf-8');
 
 //console.log(typeof importText, importText);
 
@@ -37,11 +37,7 @@ mots = mots.filter(w => /[^.,]$/.test(w));
 	return freq;
 }
 
-//PUTS WATEVER STRING OF TEXT YOU WANT TO COUNT THE WORDS OF IN THIS FUNCTION
+//PUT WHATEVER STRING OF TEXT YOU WANT TO COUNT THE WORDS OF IN THIS FUNCTION
 console.log(getFrequency(someText));
 console.log(getFrequency(someText2));
 console.log(getFrequency(importText));
-
-
-
-//console.log(/[^.,]$/.test("Hello,"));
